@@ -1,6 +1,4 @@
-import { useContext, useMemo, useState } from "react"
-import { CountContext } from "./context";
-import { RecoilRoot, useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+import {  useRecoilValue, useSetRecoilState } from "recoil";
 import { countAtom, evenSelector, oddSelector } from "./store/atoms/count";
 
 function App() {
