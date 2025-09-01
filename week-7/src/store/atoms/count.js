@@ -16,9 +16,10 @@ export const evenSelector = selector({
 
 export const oddSelector = selector({
     key : "oddSelector",
-    get : ({get}) => {
+    get : ({get,  set }) => {
         const count = get(countAtom) ;
-        return count % 2 != 0 ;
+        
+        return count  ;
     }
 })
 // Todo creation application with filtering logic
